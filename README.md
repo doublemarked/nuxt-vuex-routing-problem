@@ -13,3 +13,8 @@ Vuex is tracking the current user in a state key called `activated`. This state 
 When traversing from the single user page to the index via route modification (i.e. `<nuxt-link>` or router.push()), the `fetch()` method on the index is called before the `_id` component is unloaded. The `activated` key is mutated to null, causing the `_id` component to re-render and crash due to missing an active user. 
 
 Why is the `_id` component still loaded when the `index` component's `fetch()` is called?
+
+Additional Notes:
+
+1. You will notice that the Vuex store has a simulated delay. This problem is not exposed if the delay is removed (i.e. if those functions all execute synchronously)
+
