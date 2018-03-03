@@ -1,0 +1,9 @@
+{
+  "name": "nuxt-bugtest",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0"
+  }
+}
